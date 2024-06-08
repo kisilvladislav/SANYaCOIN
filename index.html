@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <title>SANYaCOIN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="auth-container">
+        <header>
+            <h1>SANYaCOIN</h1>
+        </header>
+        <div id="auth-form">
+            <label for="username">Введіть ваше ім'я:</label>
+            <input type="text" id="username" placeholder="Ваше ім'я">
+            <button id="authButton">Авторизуватися</button>
+        </div>
+    </div>
+    <div id="game-container" style="display: none;">
+        <header>
+            <h1>SANYaCOIN</h1>
+            <p id="usernameDisplay"></p>
+        </header>
+        <div id="stats">
+            <div class="stat">
+                <p>Монети:</p>
+                <p id="coins">0</p>
+            </div>
+            <div class="stat">
+                <p>Енергія:</p>
+                <p><span id="energy">100</span>/<span id="maxEnergy">100</span></p>
+            </div>
+        </div>
+        <div id="actions">
+            <div class="coin-container">
+                <img id="coin" src="coin.png" alt="Coin">
+            </div>
+            <button id="upgradeButton">Покращити натискання (Вартість: <span id="upgradeCost">10</span> монет)</button>
+            <button id="energyButton">Збільшити енергію (Вартість: <span id="energyCost">5</span> монет)</button>
+        </div>
+        <button id="leaderboardButton">Таблиця лідерів</button>
+    </div>
+    <audio id="backgroundMusic" src="sounds/MUSIC.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
